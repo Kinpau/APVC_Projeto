@@ -1,5 +1,4 @@
-# APVC
-Aprendizagem Profunda para Visão por Computador 
+# Aprendizagem Profunda para Visão por Computador 
 
 ### Tempo para entrega do 1º Desafio:
 
@@ -11,6 +10,38 @@ Realizado por Grupo 7:
 - João Francisco Botas
 - Miguel Gonçalves
 - Ricardo Galvão
+
+### Recomendações de execução:
+
+Para manter as dependências isoladas, é recomendado criar um ambiente virtual na pasta raiz do projeto após dar clone.
+
+#### 🖥️ Criar o ambiente virtual:
+
+Execute o seguinte comando no terminal na raiz do projeto (algo do género -> **./APVC-Desafio1**):  
+
+```bash
+python -m venv venv
+```
+
+Esta pasta criada está no ficheiro `.gitignore` e portanto não será alterada (pull/push).
+
+#### 🚀 Ativar o ambiente virtual:
+
+- Em Windows:
+  ```bash
+  venv\Scripts\Activate
+  ```
+- Em Mac/Linux:
+  ```bash
+  source venv/bin/activate
+  ```
+#### 📚 Importar as bibliotecas:
+
+Após ativar o ambiente virtual, deve-se utilizar o seguinte comando para instalar todas as bibliotecas e versões listadas no `requirements.txt`:  
+
+```bash
+pip install -r requirements.txt
+```
 
 # APVC - Desafio 1: Classificação de Imagens com Redes Neuronais  
 
