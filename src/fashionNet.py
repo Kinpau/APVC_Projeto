@@ -25,6 +25,10 @@ LABELS = ["T-Shirt/Top",
           "Boot"]
 N_CLASSES = 10
 
+print("IMG_HEIGHT: " + str(IMG_HEIGHT))
+print("IMG_WIDTH: " + str(IMG_WIDTH))
+print("N_CLASSES: " + str(N_CLASSES) + "\n")
+
 # callbacks
 BEST_MODEL_CHECKPOINT = keras.callbacks.ModelCheckpoint(
     filepath="tmp/best_model.weights.h5",      # ficheiro para os pesos do "melhor modelo"
