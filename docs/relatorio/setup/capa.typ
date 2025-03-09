@@ -1,5 +1,5 @@
 #import "template.typ": *
-
+#set text(lang: "pt", region: "pt")
 #let titulo = "Desafio 1 - Redes neuronais clássicas para classificação de mini-imagens"
 #let subtitulo = "Trabalho de Grupo realizado no âmbito da Unidade Curricular de Aprendizagem Profunda para Visão por Computador do 1º ano do Mestrado em Ciência de Dados"
 #let indice= false
@@ -39,7 +39,7 @@
 #if indice {
   v(0.4cm)
 } else {
-  v(2cm)
+  v(1.4cm)
 }
 
 #v(1cm)
@@ -54,25 +54,25 @@
   #link("mailto:Miguel_Goncalves_Pereira@iscte-iul.pt")
   #v(0.12cm)
   #text(20pt)[Ricardo Galvão, 105285, MCD-LCD-A1]\
-  #link("mailto:Araujo_Galvao@iscte-iul.pt@iscte-iul.pt")
+  #link("mailto:Araujo_Galvao@iscte-iul.pt")
 ]
 #if indice {
-  v(2cm)
+  v(1cm)
 } else {
-  v(6.5cm)
+  v(1.4cm)
 }
 #par(leading: 0.2cm)[
   #text(16pt)[09 de março 2025]\
-  #text(16pt)[Versão 0.0.1] 
+  #text(16pt)[Versão 1.0.0] 
   // 1st number: versão "final" para entregar
   // 2nd number: incremento de conteúdo e tópicos
   // 3rd number: correções de escrita e + info/comments
   // ao aumentar um número, da direita desse passam a 0
 ]
-#v(3cm)
+#v(0.1cm)
 #set align(left)
-// #outline(
-//   title: text(weight: 600)[Índice],
-//   fill: text(15pt, spacing: 220%)[#repeat(" . ")]
-// )
+ #outline(
+   title: text(weight: 600)[Índice],
+   fill: text(15pt, spacing: 220%)[#repeat(" . ")], depth: 1
+ )
 

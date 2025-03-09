@@ -1,4 +1,5 @@
 // #import "@preview/algo:0.3.3": algo, i, d, comment, code
+#set text(lang: "pt", region: "pt")
 #import "@preview/tablex:0.0.5": vlinex, hlinex, tablex, gridx
 #import "@preview/algo:0.3.3": algo, i, d, comment, code
 #let to = box(width: 8pt, baseline: 10%)[..]
@@ -48,7 +49,7 @@
   //   region: "pt"
   // )
   set page(
-    numbering: "1 / 1", //"1 / 24"
+    numbering: "1 / 4", //"1 / 24"
     margin: (left: 12mm, right: 12mm, top: 13mm, bottom: 13mm)
   )
   set par(
