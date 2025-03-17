@@ -2,7 +2,7 @@
 
 ### Tempo para entrega do 2º Desafio:
 
-![Countdown Timer](https://i.countdownmail.com/415jet.gif)
+![Countdown Timer](https://i.countdownmail.com/42psc7.gif)
 
 Realizado por Grupo 7:
 
