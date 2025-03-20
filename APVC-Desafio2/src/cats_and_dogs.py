@@ -15,7 +15,7 @@ import os
 from pathlib import Path
 
 # Configurar a seed do TensorFlow
-tf.keras.utils.set_random_seed(42)
+tf.keras.utils.set_random_seed(777)
 # Definir a seed global para a operação de GPU
 tf.config.experimental.enable_op_determinism()
 
@@ -23,6 +23,10 @@ tf.config.experimental.enable_op_determinism()
 # Definir o número de threads
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Para evitar log excessivo de TensorFlow
 os.environ['OMP_NUM_THREADS'] = '1'  # Para limitar o número de threads
+
+# Tamanho das imagens
+img_height = 256
+img_width = 256
 
 # Localização dos dados
 path = Path(r"../datasets/cats_and_dogs/")
@@ -32,16 +36,20 @@ train = keras.utils.image_dataset_from_directory(
     path / "train",
     label_mode="binary",
     class_names=["cats", "dogs"],
+    image_size=(img_height, img_width),
 )
 validation, test = keras.utils.image_dataset_from_directory(
     path / "validation",
     label_mode="binary",
     class_names=["cats", "dogs"],
-    seed=42,
+    image_size=(img_height, img_width),
+    seed=777,
     validation_split=.5,
     subset="both",
 )
-
+train = train.cache()
+validation = validation.cache()
+test = test.cache()
 # Labels
 labels = ["cat", "dog"]
 
