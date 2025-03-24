@@ -19,7 +19,6 @@ tf.keras.utils.set_random_seed(777)
 # Definir a seed global para a operação de GPU
 tf.config.experimental.enable_op_determinism()
 
-
 # Definir o número de threads
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Para evitar log excessivo de TensorFlow
 os.environ['OMP_NUM_THREADS'] = '1'  # Para limitar o número de threads
@@ -58,4 +57,3 @@ train_labels = np.concatenate([y for x, y in train], axis=0)
 validation_labels = np.concatenate([y for x, y in validation], axis=0) 
 test_labels = np.concatenate([y for x, y in test], axis=0) 
 print(f"Train: {len(train_labels)} samples, {sum(train_labels)[0]/len(train_labels):.2%} dogs\nValidation: {len(validation_labels)} samples, {sum(validation_labels)[0]/len(validation_labels):.2%} dogs\nTest: {len(test_labels)} samples, {sum(test_labels)[0]/len(test_labels):.2%} dogs")
-
