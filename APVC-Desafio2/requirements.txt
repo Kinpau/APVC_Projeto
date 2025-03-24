@@ -8,3 +8,4 @@ seaborn
 pydot
 opencv-python
 lxml[html_clean]
+tf_keras_vis
