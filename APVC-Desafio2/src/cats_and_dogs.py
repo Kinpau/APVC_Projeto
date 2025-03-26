@@ -19,10 +19,6 @@ tf.keras.utils.set_random_seed(777)
 # Definir a seed global para a operação de GPU
 tf.config.experimental.enable_op_determinism()
 
-# Definir o número de threads
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Para evitar log excessivo de TensorFlow
-os.environ['OMP_NUM_THREADS'] = '1'  # Para limitar o número de threads
-
 # Tamanho das imagens
 img_height = 256
 img_width = 256
