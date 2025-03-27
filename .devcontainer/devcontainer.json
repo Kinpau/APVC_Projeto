@@ -1,0 +1,4 @@
+{
+    "image": "tensorflow/tensorflow:latest-gpu-jupyter",
+    "forwardPorts": [8888]
+}
